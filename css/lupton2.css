@@ -1,0 +1,369 @@
+
+
+
+.newspaper {
+	
+    width: 492px;
+	height: 600px;
+    background: url(../images/newspaper.png);
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.box  {	
+    width: 450px;
+	height: 555px;
+    background: #f4f277; 
+        position: absolute;
+    left: 50%;
+       transform: translate(-51%, 4%);
+    z-index: 1;
+    animation: color 2s steps(100);
+} 
+
+.typing  {	
+    width: 450px;
+	height: 555px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+} 
+
+.title_text  {
+    width: 150px;
+	height: 555px;
+    position: absolute;
+    top: 0px;
+    left: 238px;
+    z-index: 3;   
+    
+}
+
+.t {
+    
+    font-family: rogliano, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 152px;
+    position: absolute;
+    left: 82px;
+    top: 10px;
+    visibility: hidden;
+    animation: type_move 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+
+}
+
+.y {
+    font-family: rogliano, sans-serif;
+    font-size: 152px;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 136px;
+    top: 10px;   
+    visibility: hidden;
+    animation: type_move 3s ;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;    
+}
+
+
+.p {
+    font-family: rogliano, sans-serif;
+    font-size: 152px;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    visibility: hidden;
+    animation: type_move 4s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+
+.e {
+    font-family: rogliano, sans-serif;
+    font-size: 152px;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 305px;
+    top: 10px;
+    z-index: 9;
+    visibility: hidden;
+    animation: type_move 5s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+
+}
+.author {
+    font-family: rogliano, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: .9;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0px;
+    top: 48px;
+    visibility: hidden;
+    animation: move 7s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;   
+}
+
+.subtitle {
+    color: indianred;
+    font-family: rogliano, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 2.2;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0px;
+    top: 405px;
+    visibility: hidden;
+    animation: move 7s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;   
+}
+
+.thinking {
+    font-family: rogliano, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    visibility: hidden;
+    animation: move 7s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;   
+}
+
+
+ .hr_h {
+     width: 350px;
+     color: red;
+     position: absolute;
+     left: 155px;
+     top: 81px;
+     z-index: 2; 
+     visibility: hidden;
+     animation: hr_move 2s;
+     animation-delay: 2s;
+     animation-fill-mode: forwards;   
+}
+
+ .hr_v {
+     width: 250px;
+     color: red;
+     position: absolute;
+     left: 110px;
+     top: 240px;
+     transform: rotate(90deg);
+     z-index: 2; 
+     visibility: hidden;
+     animation: hr_move 2s;
+     animation-delay: 3s;
+     animation-fill-mode: forwards;   
+}
+
+.hr_y {
+     width: 48px;
+     color: red;
+     position: absolute;
+     left: 50px;
+     top: 167px;
+     z-index: 2; 
+     visibility: hidden;
+     animation: hr_y_move 2s;
+     animation-delay: 5s;
+     animation-fill-mode: forwards;   
+}     
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: solid red 1px;
+    border-radius: 100%;
+    position: absolute;
+    top: 285px;
+    left: 350px;
+    transition: 4s;
+     z-index: 2; 
+     visibility: hidden;
+     animation: circle_move 2s;
+     animation-delay: 4s;
+     animation-fill-mode: forwards;   
+}
+
+ .curvedline {
+    width: 165px;
+	height: 33px;
+    position: absolute;
+    left: 60px;
+    top: 255px;
+     content:url(../images/CurvedLine.png);
+    transition: 4s;
+     z-index: 2; 
+     visibility: hidden;
+     animation: curvedline_move 2s;
+     animation-delay: 5s;
+     animation-fill-mode: forwards;  
+
+}
+.btn_t {
+  background-color: #f4f277;
+  border: none;
+  color: #f4f277;
+  font-family: rogliano, sans-serif;
+  font-style: italic; 
+  padding: 2px 2px;
+  text-align: center;
+  font-size: 10px;
+  margin: 2px 2px;
+  position: absolute;
+    top: 238px;
+    left: 50px;
+  transition: 0.3s;
+  z-index: 10; 
+  visibility: hidden;
+  animation: move 1s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;   
+}
+
+.btn_y {
+  background-color: #f4f277;
+  border: none;
+  color: #f4f277;
+  font-family: rogliano, sans-serif;
+  font-style: italic; 
+  padding: 2px 2px;
+  text-align: left;
+  font-size: 10px;
+  height: 50px;
+  width: 54px;
+  position: absolute;
+    top: 315px;
+    left: 95px;
+  transition: 0.3s;
+  z-index: 6; 
+  visibility: hidden;
+  animation: move 1s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;   
+}
+
+.btn_p {
+  background-color: #f4f277;
+  border: none;
+  color: #f4f277;
+  font-family: rogliano, sans-serif;
+  font-style: italic; 
+  padding: 2px 2px;
+  text-align: center;
+  font-size: 10px;
+  margin: 2px 2px;
+  position: absolute;
+    top: 295px;
+    left: 205px;
+  transform: rotate(90deg);
+  z-index: 6; 
+  visibility: hidden;
+  animation: move 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;   
+}
+
+.btn_e {
+  background-color: #f4f277;
+  border: none;
+  color: #f4f277;
+  font-family: rogliano, sans-serif;
+  font-style: italic; 
+  padding: 2px 2px;
+  text-align: left;
+  font-size: 10px;
+  margin: 2px 2px;
+  position: absolute;
+    top: 280px;
+    left: 385px;
+  transition: 0.3s;
+  z-index: 10; 
+  visibility: hidden;
+  animation: move 1s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;   
+}
+
+.btn_e:hover {
+  background-color: #f4f277;
+  color: black;
+  z-index: 6;  
+}
+
+.btn_p:hover {
+  background-color: #f4f277;
+  color: black;
+  z-index: 6;  
+}
+
+.btn_y:hover {
+  background-color: #f4f277;
+  color: black;
+  z-index: 6;  
+}
+
+.btn_t:hover {
+  background-color: #f4f277;
+  color: black;  
+}
+
+@keyframes move {
+    0% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+@keyframes curvedline_move {
+    0% {width: 0; visibility: hidden;}
+    100% {width: 340; visibility: visible;}
+}
+@keyframes circle_move {
+    0% {width: 0; visibility: hidden;}
+    100% {width: 340; visibility: visible;}
+}
+@keyframes hr_move {
+    0% {width: 0; visibility: hidden;}
+    50% {width: 340; visibility: visible;}
+    75% {width: 340; transform: rotate(90deg); visibility: visible;}   
+    100% {width: 340; transform: rotate(90deg); visibility: visible;}
+}
+
+@keyframes hr_y_move {
+    0% {width: 0; visibility: hidden;}
+    100% {width: 28; visibility: visible;}
+}
+@keyframes type_move {
+    0% {color: grey; visibility: hidden;}
+    100% {color: black; visibility: visible;}
+}
+
+      
+    
+ @keyframes color {
+    0% {background: red;}
+    100% {background: #f4f277;}
+}
